@@ -14,7 +14,7 @@ def main():
     	 header = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'}
 
    	 req = request.Request(url, headers=header)
-   	 conn = sqlite3.connect(r'C:\dbs\crypto')
+   	 conn = sqlite3.connect(r'C:\projects\BitCoinProj\crypto')
    	 c = conn.cursor()
     
    	 with request.urlopen(req) as data: 
